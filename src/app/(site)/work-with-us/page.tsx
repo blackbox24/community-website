@@ -8,6 +8,12 @@ import {
   Prose,
   Section,
 } from "@/components/layout/Editorial";
+import {
+  CONTACT_EMAIL,
+  CONTACT_URL,
+  PARTNER_URL,
+  POST_ROLE_URL,
+} from "@/lib/data/links";
 
 export const metadata: Metadata = {
   title: "Work With Us · Codetopia Community",
@@ -15,16 +21,11 @@ export const metadata: Metadata = {
     "How organisations work with Codetopia Community: hire, share a challenge, speak, or host.",
 };
 
-// One inbox for everything until each kind of request has its own address.
-const CONTACT_EMAIL = "hello@codetopia.org";
-const CONTACT_URL = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Working with Codetopia Community")}`;
-const PARTNER_URL = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Partnership with Codetopia")}`;
-
 const ways = [
   {
     title: "Hire",
     description:
-      "List roles, internships and graduate opportunities on our careers board, where members see them.",
+      "Send us your role, internship or graduate opportunity and we'll list it on our careers board, where members see it.",
   },
   {
     title: "Share a challenge",
@@ -106,6 +107,7 @@ export default function WorkWithUsPage() {
 
         <div className="flex flex-wrap gap-x-10 gap-y-4">
           <LeadLink href={CONTACT_URL}>Get in touch</LeadLink>
+          <LeadLink href={POST_ROLE_URL}>Post a role</LeadLink>
           <LeadLink href="/careers">See the careers board</LeadLink>
         </div>
       </Section>
