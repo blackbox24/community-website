@@ -38,11 +38,6 @@ export const coreValues = [
 /** What the community actually runs. Members run all of it. */
 export const programmes = [
   {
-    tag: "Mentorships",
-    description:
-      "Experienced members working one-on-one with people a few steps behind them.",
-  },
-  {
     tag: "Events",
     description:
       "Workshops and meetups, online and in person — including in schools and colleges around Ghana.",
@@ -90,9 +85,9 @@ export const whatYouGet = [
       "Real projects with real users, not exercises. You'll be doing the thing, not reading about it.",
   },
   {
-    title: "Mentorship",
+    title: "People ahead of you",
     description:
-      "People who've already done what you're trying to do, and are willing to sit with you while you learn it.",
+      "People who've already done what you're trying to do, working on the same things you are and willing to help when you're stuck.",
   },
   {
     title: "Something to point at",

@@ -45,12 +45,11 @@ async function loadAboutData(): Promise<{
   faces: AboutFace[];
   stats: AboutStat[];
 }> {
-  const [recognitionsResult, teamResult, eventCountResult, mentorshipResult] =
+  const [recognitionsResult, teamResult, eventCountResult] =
     await Promise.allSettled([
       fetchPortalRecognitions(undefined, 60),
       getTeamData(),
       prisma.event.count(),
-      prisma.mentorship.count(),
     ]);
 
   const recognitions =
@@ -112,12 +111,6 @@ async function loadAboutData(): Promise<{
         eventCountResult.status === "fulfilled" ? eventCountResult.value : null,
       label: "Events run",
       one: "Event run",
-    },
-    {
-      value:
-        mentorshipResult.status === "fulfilled" ? mentorshipResult.value : null,
-      label: "Mentorship programmes",
-      one: "Mentorship programme",
     },
     {
       value: recognitions.length || null,
@@ -281,16 +274,21 @@ export default async function AboutPage() {
               <span className="text-zinc-400">Community.</span>
             </h1>
             <div className="flex flex-col gap-6">
+              <p className="font-mono text-sm md:text-base text-white italic">
+                A utopia for tech enthusiasts.
+              </p>
               <Prose>
-                We&rsquo;re an initiative of{" "}
-                <InlineLink href="https://codetopia.org">Codetopia</InlineLink>{" "}
-                — a community of builders, learners, and creators figuring it
-                out together. We learn in the open, build real things, and help
-                each other level up.{" "}
+                Codetopia Community is an open community where people in tech do
+                real work together. Members grow through work reviewed by people
+                who know the craft, and it all goes on a record that is theirs.{" "}
                 <Lit>
                   Everyone here started as a beginner, and nobody is expected to
                   know everything.
                 </Lit>
+              </Prose>
+              <Prose>
+                The community belongs to its members, and it is open to any
+                organisation that wants to work with the people here.
               </Prose>
               <Prose>
                 If you&rsquo;re reading this before signing up: good. This page
@@ -430,7 +428,7 @@ export default async function AboutPage() {
 
       {/* ── 05 · What you get out of it ──────────────────────────────── */}
       <Section num="05" label="What You Get Out Of It">
-        <Heading>Experience, mentorship, and a record.</Heading>
+        <Heading>Experience, people, and a record.</Heading>
         <Prose>
           Every role here is voluntary and unpaid, team leads included. Nobody
           is paid to be part of this. What you get instead is real work to do,

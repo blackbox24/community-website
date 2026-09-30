@@ -30,9 +30,9 @@ const reasons = [
     icon: Signal,
   },
   {
-    title: "Mentorship, Assigned",
+    title: "Open To Organisations",
     description:
-      "Not join and hope. One-on-one guidance from people who have already done the thing you are trying to do.",
+      "The community belongs to its members, and any organisation that wants to work with the people here is welcome.",
     icon: Compass,
   },
   {
@@ -51,9 +51,9 @@ const everyday = [
     icon: GitPullRequest,
   },
   {
-    title: "Technical Training",
+    title: "People Ahead Of You",
     description:
-      "Structured learning paths and workshops, from fundamentals to advanced architecture.",
+      "Ask when you are stuck, get your work reviewed, and work alongside people who have already done it.",
     icon: Layers,
   },
   {
