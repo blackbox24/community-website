@@ -8,12 +8,7 @@ import {
   Prose,
   Section,
 } from "@/components/layout/Editorial";
-import {
-  CONTACT_EMAIL,
-  CONTACT_URL,
-  PARTNER_URL,
-  POST_ROLE_URL,
-} from "@/lib/data/links";
+import { CONTACT_EMAIL, CONTACT_URL, POST_ROLE_URL } from "@/lib/data/links";
 import { organisations } from "@/lib/data/partners";
 
 export const metadata: Metadata = {
@@ -21,6 +16,8 @@ export const metadata: Metadata = {
   description:
     "How organisations work with Codetopia Community: hire, share a challenge, speak, or host.",
 };
+
+const CODETOPIA_PARTNERS_URL = "https://codetopia.org/partners";
 
 // Left-aligned, unlike the centred band on the home page, so the logos sit
 // in the same column as the rest of this page's content.
@@ -130,20 +127,15 @@ export default function WorkWithUsPage() {
       <Section num="02" label="Partnerships">
         <Heading>Partner with Codetopia.</Heading>
         <Prose>
-          Sponsorships, partnerships, commissioned projects and work with
-          schools are handled by{" "}
+          Sponsorships, partnerships and work with schools are handled by{" "}
           <InlineLink href="https://codetopia.org">Codetopia</InlineLink>, which
           leads the community. That gives you one point of contact across
-          everything Codetopia does.
+          everything Codetopia does, and a look at who Codetopia works with
+          across its initiatives.
         </Prose>
-        <Prose>
-          Codetopia works with organisations across all its initiatives.{" "}
-          <InlineLink href="https://codetopia.org/partners">
-            See who at codetopia.org
-          </InlineLink>
-          .
-        </Prose>
-        <LeadLink href={PARTNER_URL}>Partner with Codetopia</LeadLink>
+        <LeadLink href={CODETOPIA_PARTNERS_URL}>
+          Partner with Codetopia
+        </LeadLink>
       </Section>
 
       {/* ── 03 · How we work ─────────────────────────────────── */}
@@ -166,9 +158,9 @@ export default function WorkWithUsPage() {
         </div>
       </Section>
 
-      {/* ── 04 · Who we've worked with ───────────────────────── */}
+      {/* ── 04 · Who we work with ────────────────────────────── */}
       <Section num="04" label="Track Record">
-        <Heading>Who we&rsquo;ve worked with.</Heading>
+        <Heading>Who we work with.</Heading>
         <div className="flex flex-col gap-10">
           {organisationGroups.map((group) => (
             <div key={group.label} className="flex flex-col gap-5">

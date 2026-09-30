@@ -9,7 +9,7 @@ export const JOIN_URL = "/howtos/Getting-Started/01-join-the-community";
 
 /**
  * Where organisations write to us. One inbox for everything until each kind
- * of request (roles, partnerships, general) has its own address.
+ * of request has its own address. Partnerships go to codetopia.org/partners.
  */
 export const CONTACT_EMAIL = "hello@codetopia.org";
 
@@ -20,7 +20,6 @@ function mailto(subject: string, body?: string): string {
 }
 
 export const CONTACT_URL = mailto("Working with Codetopia Community");
-export const PARTNER_URL = mailto("Partnership with Codetopia");
 
 /**
  * Roles are listed by an admin from /admin/careers, so the email asks for
