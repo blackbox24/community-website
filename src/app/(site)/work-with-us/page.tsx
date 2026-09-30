@@ -25,7 +25,7 @@ const ways = [
   {
     title: "Hire",
     description:
-      "Send us your role, internship or graduate opportunity and we'll list it on our careers board, where members see it.",
+      "Send us your role, internship or graduate opportunity and we'll list it on our careers board, where members see it. We check every role before listing it.",
   },
   {
     title: "Share a challenge",
