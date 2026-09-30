@@ -340,9 +340,9 @@ export default async function AboutPage() {
         </div>
       </Section>
 
-      {/* ── 03 · What we run ─────────────────────────────────────────── */}
+      {/* ── 03 · What happens here ─────────────────────────────────────────── */}
       <Section num="03" label="What We Do">
-        <Heading>What we run.</Heading>
+        <Heading>What happens here.</Heading>
         <Prose>Members run all of it. Most of it is open to any member.</Prose>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 max-w-4xl">
@@ -359,9 +359,9 @@ export default async function AboutPage() {
         </div>
 
         <Prose>
-          One of those projects is the website you&rsquo;re reading. Members
-          built it, members write the articles on it, and the how-to library was
-          started by our June&ndash;July 2026 intern cohort.{" "}
+          One example is the website you&rsquo;re reading. Members built it,
+          members write the articles on it, and the how-to library was started
+          by our June&ndash;July 2026 intern cohort.{" "}
           <Lit>
             The guides that teach you to join were written by people who joined
             before you — eventually you write one for whoever comes next.

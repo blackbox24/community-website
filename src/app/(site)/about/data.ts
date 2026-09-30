@@ -35,39 +35,44 @@ export const coreValues = [
   },
 ];
 
-/** What the community actually runs. Members run all of it. */
+/** What people do here, inward and outward. Members run all of it. */
 export const programmes = [
   {
-    tag: "Events",
+    tag: "Real work",
     description:
-      "Workshops and meetups, online and in person — including in schools and colleges around Ghana.",
+      "Our own projects, like this website and our open-source repos, and organisations are welcome to bring work to the people here too.",
   },
   {
     tag: "Teams",
     description:
-      "Small groups that each keep a part of the community running — events, writing, the website. You request to join; a team lead reviews it.",
+      "Small groups of members who each own an area. You request to join; a team lead reviews it.",
   },
   {
-    tag: "How-tos",
+    tag: "Showing up",
     description:
-      "Practical guides written by members, for the things people around here actually get stuck on.",
+      "Workshops, meetups and hackathons, online and in person across Ghana.",
   },
   {
-    tag: "Articles",
+    tag: "Sharing what you know",
     description:
-      "Technical writing that teaches something properly, published on our blog under the community's name.",
+      "Articles, how-to guides and talks, published under your name.",
   },
   {
-    tag: "Open source",
+    tag: "Opportunities",
     description:
-      "Our repos are public. Anyone can report a bug or fix one — member or not.",
+      "Roles, internships and projects from organisations, posted on our careers board.",
+  },
+  {
+    tag: "Recognition",
+    description:
+      "Reviewed work goes on your record, and the best of it is featured on the Wall of Impact and in Spotlight.",
   },
 ];
 
 /**
  * How work gets reviewed and recorded. Deliberately short — anything the
  * prose above already says doesn't earn a second airing as a rule, and
- * joining a team is covered under what we run.
+ * joining a team is covered under what happens here.
  */
 export const reviewRules = [
   { rule: "Nobody reviews their own work.", detail: null },

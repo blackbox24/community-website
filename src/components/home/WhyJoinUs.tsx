@@ -47,7 +47,7 @@ const everyday = [
   {
     title: "Collaborative Projects",
     description:
-      "Real-world work on community-led systems and open-source contributions.",
+      "Real work, from our own projects and open source to work organisations are welcome to bring.",
     icon: GitPullRequest,
   },
   {
@@ -95,11 +95,11 @@ export function WhyJoinUs() {
               time you put in.
             </p>
             <p>
-              Here, the work gets written down. You join a team, you do real
-              work, practitioners review it, and what you did becomes part of
-              who you are in the community. A record you never had to write
-              about yourself, because the people you worked with wrote it for
-              you.
+              Here, the work gets written down. You do real work, on a team, a
+              project or an event, practitioners review it, and what you did
+              becomes part of who you are in the community. A record you never
+              had to write about yourself, because the people you worked with
+              wrote it for you.
             </p>
             <p>
               And it counts the contributions that normally leave no trace: the
