@@ -32,7 +32,7 @@ const reasons = [
   {
     title: "Open To Organisations",
     description:
-      "The community belongs to its members, and any organisation that wants to work with the people here is welcome.",
+      "Led by Codetopia and run by its members. Any organisation that wants to work with the people here is welcome.",
     icon: Compass,
   },
   {

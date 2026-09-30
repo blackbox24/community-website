@@ -287,7 +287,9 @@ export default async function AboutPage() {
                 </Lit>
               </Prose>
               <Prose>
-                The community belongs to its members, and it is open to any
+                Led by{" "}
+                <InlineLink href="https://codetopia.org">Codetopia</InlineLink>{" "}
+                and run by its members, the community is open to any
                 organisation that wants to work with the people here.
               </Prose>
               <Prose>
