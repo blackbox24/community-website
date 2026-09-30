@@ -4,6 +4,8 @@ Public hub for Codetopia Community — an open community where people in tech do
 
 Teaching (mentorship programmes, courses, structured learning) belongs to Codetopia Academy, not the community. Don't add copy that promises it here.
 
+In visitor-facing copy, avoid em dashes. Use a full stop, colon or comma instead.
+
 **Production:** [community.codetopia.org](https://community.codetopia.org)
 
 ---

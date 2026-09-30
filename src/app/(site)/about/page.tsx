@@ -327,7 +327,7 @@ export default async function AboutPage() {
         <Heading>It started small.</Heading>
         <div className="flex flex-col gap-6">
           <Prose>
-            Codetopia started us in 2020 as its first initiative — a small group
+            Codetopia started us in 2020 as its first initiative: a small group
             meeting online to show each other what they were building. It grew
             from there.
           </Prose>
@@ -366,7 +366,7 @@ export default async function AboutPage() {
           by our June&ndash;July 2026 intern cohort.{" "}
           <Lit>
             The guides that teach you to join were written by people who joined
-            before you — eventually you write one for whoever comes next.
+            before you. Eventually you write one for whoever comes next.
           </Lit>{" "}
           The code is public if you want to check:{" "}
           <InlineLink href="https://github.com/codetopiacommunity/community-website">
@@ -384,16 +384,16 @@ export default async function AboutPage() {
         <div className="flex flex-col gap-6">
           <Prose>
             This is the part that&rsquo;s different from most communities. When
-            you make something — code, a guide, a design, an event you ran,
-            someone you mentored — another member reviews it before it counts.
-            If it isn&rsquo;t ready, you&rsquo;re told what&rsquo;s missing and
-            you can fix it.
+            you make something, whether code, a guide, a design, an event you
+            ran or someone you helped, another member reviews it before it
+            counts. If it isn&rsquo;t ready, you&rsquo;re told what&rsquo;s
+            missing and you can fix it.
           </Prose>
           <Prose>
             What gets approved goes on your record: what it was, when you did
             it, and a link to the work itself. Over time that becomes a public
             track record of what you&rsquo;ve actually done,{" "}
-            <Lit>including the work GitHub never sees</Lit> — teaching,
+            <Lit>including the work GitHub never sees</Lit>: helping people,
             organising, running events, design.
           </Prose>
         </div>
@@ -435,8 +435,8 @@ export default async function AboutPage() {
           Every role here is voluntary and unpaid, team leads included. Nobody
           is paid to be part of this. What you get instead is real work to do,
           people further along who&rsquo;ll help you do it, and a public track
-          record of everything you&rsquo;ve contributed —{" "}
-          <Lit>one you didn&rsquo;t have to write about yourself.</Lit>
+          record of everything you&rsquo;ve contributed.{" "}
+          <Lit>One you didn&rsquo;t have to write about yourself.</Lit>
         </Prose>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 max-w-4xl">
@@ -468,8 +468,8 @@ export default async function AboutPage() {
             information that doesn&rsquo;t belong to the person will be removed.
           </Prose>
           <Prose>
-            Beyond that, we expect you to take part — build something, help
-            somebody, teach somebody, or show up and keep the lights on.{" "}
+            Beyond that, we expect you to take part. Build something, help
+            somebody, share what you know, or show up and keep the lights on.{" "}
             <Lit>Contribution starts with being present.</Lit> If you&rsquo;re
             not sure where you fit yet, that&rsquo;s completely fine. Hang out,
             join conversations, come to events. It&rsquo;ll still be here when
@@ -518,13 +518,13 @@ export default async function AboutPage() {
         <div className="flex flex-col gap-6">
           <Prose>
             Anyone can join and it&rsquo;s free. There&rsquo;s no application
-            and no fee, and it only takes a few minutes —{" "}
-            <InlineLink href={JOIN_GUIDE}>our joining guide</InlineLink> walks
+            and no fee, and it only takes a few minutes.{" "}
+            <InlineLink href={JOIN_GUIDE}>Our joining guide</InlineLink> walks
             you through it step by step.
           </Prose>
           <Prose>
             You don&rsquo;t have to be a member to help, either. Our repos are
-            public — if you spot a bug or a typo in our docs, you can fix it
+            public, so if you spot a bug or a typo in our docs, you can fix it
             today.
           </Prose>
         </div>

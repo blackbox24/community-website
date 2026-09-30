@@ -102,6 +102,6 @@ export const whatYouGet = [
   {
     title: "People who know your work",
     description:
-      "The members who reviewed what you made can speak to it — which is more than most CVs can offer.",
+      "The members who reviewed what you made can speak to it, which is more than most CVs can offer.",
   },
 ];
