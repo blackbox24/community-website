@@ -136,6 +136,13 @@ export default function WorkWithUsPage() {
           leads the community. That gives you one point of contact across
           everything Codetopia does.
         </Prose>
+        <Prose>
+          Codetopia works with organisations across all its initiatives.{" "}
+          <InlineLink href="https://codetopia.org/#partners">
+            See who at codetopia.org
+          </InlineLink>
+          .
+        </Prose>
         <LeadLink href={PARTNER_URL}>Partner with Codetopia</LeadLink>
       </Section>
 
