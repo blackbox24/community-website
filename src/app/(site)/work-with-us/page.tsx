@@ -138,7 +138,7 @@ export default function WorkWithUsPage() {
         </Prose>
         <Prose>
           Codetopia works with organisations across all its initiatives.{" "}
-          <InlineLink href="https://codetopia.org/#partners">
+          <InlineLink href="https://codetopia.org/partners">
             See who at codetopia.org
           </InlineLink>
           .
