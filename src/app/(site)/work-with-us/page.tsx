@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Organisations } from "@/components/home/Organisations";
+import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import {
   Heading,
@@ -14,12 +14,26 @@ import {
   PARTNER_URL,
   POST_ROLE_URL,
 } from "@/lib/data/links";
+import { organisations } from "@/lib/data/partners";
 
 export const metadata: Metadata = {
   title: "Work With Us · Codetopia Community",
   description:
     "How organisations work with Codetopia Community: hire, share a challenge, speak, or host.",
 };
+
+// Left-aligned, unlike the centred band on the home page, so the logos sit
+// in the same column as the rest of this page's content.
+const organisationGroups = [
+  { label: "Sponsors", type: "sponsor" },
+  { label: "Partners", type: "partner" },
+  { label: "Worked with", type: "worked-with" },
+]
+  .map((group) => ({
+    label: group.label,
+    items: organisations.filter((org) => org.type === group.type),
+  }))
+  .filter((group) => group.items.length > 0);
 
 const ways = [
   {
@@ -146,10 +160,36 @@ export default function WorkWithUsPage() {
       </Section>
 
       {/* ── 04 · Who we've worked with ───────────────────────── */}
-      <Section num="04" label="Who We've Worked With">
+      <Section num="04" label="Track Record">
         <Heading>Who we&rsquo;ve worked with.</Heading>
-        <div className="-mx-4 lg:mx-0">
-          <Organisations />
+        <div className="flex flex-col gap-10">
+          {organisationGroups.map((group) => (
+            <div key={group.label} className="flex flex-col gap-5">
+              <h3 className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-500">
+                {group.label}
+              </h3>
+              <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
+                {group.items.map((org) => (
+                  <a
+                    key={org.id}
+                    href={org.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+                  >
+                    <Image
+                      src={org.logo}
+                      alt={org.name}
+                      width={224}
+                      height={80}
+                      className="h-14 md:h-16 w-auto max-w-48 object-contain"
+                      unoptimized
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </Section>
     </>
