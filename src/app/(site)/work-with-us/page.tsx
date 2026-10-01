@@ -85,8 +85,8 @@ export default function WorkWithUsPage() {
               <Prose>
                 Codetopia Community brings together people in tech doing real
                 work across every discipline and level. We welcome organisations
-                that want to work with our members: to hire, to collaborate, or to
-                share what they know.
+                that want to work with our members: to hire, to collaborate, or
+                to share what they know.
               </Prose>
             </div>
           </div>
@@ -148,8 +148,8 @@ export default function WorkWithUsPage() {
             take on, and your privacy is secure.
           </Prose>
           <Prose>
-            Organisations will get to know you through the roles, challenges, and
-            events you choose to join. Ultimately, this means the people you
+            Organisations will get to know you through the roles, challenges,
+            and events you choose to join. Ultimately, this means the people you
             encounter are here because they truly want to be.
           </Prose>
         </div>
